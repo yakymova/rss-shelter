@@ -1,0 +1,19 @@
+$primary-color: #F1CDB3;
+
+@import 'header.scss';
+
+@function rem($px) {
+    $result: calc($px / 16) + rem;
+    @return $result;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
